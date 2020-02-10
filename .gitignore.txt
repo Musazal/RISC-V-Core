@@ -1,0 +1,10 @@
+*.qsf
+*.bak
+*.sdc
+*.rpt
+*.qip
+db/
+greybox_tmp/
+incremental_db/
+output_files/
+simulation/
