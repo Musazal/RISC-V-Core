@@ -79,8 +79,8 @@ module mux2to1_1bits
 	always @(*)
 	begin
 		case(sel)
-		1:z=b;
 		0:z=a;
+		1:z=b;
 		default:z=a;
 	end
 endmodule
