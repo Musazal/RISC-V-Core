@@ -78,9 +78,9 @@ module mux2to1_1bits
 );
 	always @(*)
 	begin
-		if (sel == 1)
-			z = b;
-		else 
-			z = a;
+		case(sel)
+		1:z=b;
+		0:z=a;
+		default:z=a;
 	end
 endmodule
