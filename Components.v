@@ -69,3 +69,18 @@ module decoder_nto2_n #(parameter no_of_registers)
 	assign y = 1'b1 << x;
 
 endmodule
+
+module mux2to1_1bits 
+(
+	input a,b,
+	input sel,
+	output z
+);
+	always @(*)
+	begin
+		if (sel)
+			z = b;
+		else 
+			z = a;
+	end
+endmodule
