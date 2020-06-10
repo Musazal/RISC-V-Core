@@ -84,3 +84,17 @@ module mux2to1_1bits
 		default:z=a;
 	end
 endmodule
+
+module mux2to1_1bits 
+(
+	input a,b,
+	input sel,
+	output z
+);
+	always @(*)
+	begin	
+		z = a;
+		if (sel)
+			z = b;
+	end
+endmodule
