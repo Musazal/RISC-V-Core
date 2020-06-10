@@ -93,8 +93,8 @@ module mux2to1_1bits
 );
 	always @(*)
 	begin	
-		z = a;
+		z = b;
 		if (sel)
-			z = b;
+			z = a;
 	end
 endmodule
